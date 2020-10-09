@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <!--color fir btns-->
+    <color name="gradienyt_start">#4c84ff</color>
+    <color name="gradienyt_end">#18a3fe</color>
+
+    <!--for tab and sceen text-->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title">#000000</color>
+    <color name="printr_description">#656565</color>
+</resources>

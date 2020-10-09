@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firebase SignIn"
+        android:textSize="32sp"
+        android:fontFamily="@font/customfont"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/header"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutEmailSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@+id/header">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:gravity="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtLayoutPasswordSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/txtLayoutEmailSignIn">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPasswordSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:gravity="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:layout_below="@+id/txtLayoutPasswordSignIn"
+        android:text="Sign In"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:id="@+id/btnSignIn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user? Sign Up here?"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtSignUp"/>
+
+</RelativeLayout>
